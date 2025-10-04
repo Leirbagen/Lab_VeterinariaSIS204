@@ -1,0 +1,59 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly ClassVeterinaria, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ClassVeterinaria.datos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.String, System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getDueno(): PrivateScope, Public, HideBySig
+    getContacto(): PrivateScope, Public, HideBySig
+    getHora_llegada(): PrivateScope, Public, HideBySig
+    getcantmascotas(): PrivateScope, Public, HideBySig
+    setDueno(String): PrivateScope, Public, HideBySig
+    setContacto(String): PrivateScope, Public, HideBySig
+    setHora_llegada(String): PrivateScope, Public, HideBySig
+    setcantmascotas(Int32): PrivateScope, Public, HideBySig
+Class ClassVeterinaria.cola_veterinaria: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    AgregarInicio(datos): PrivateScope, Public, HideBySig
+    AgregarFinal(datos): PrivateScope, Public, HideBySig
+    EliminarInicio(): PrivateScope, Public, HideBySig
+    EliminarFinal(): PrivateScope, Public, HideBySig
+    ObtenerLista(): PrivateScope, Public, HideBySig
+    ObtenerCantidad(): PrivateScope, Public, HideBySig
+Class ClassVeterinaria.pila_veterinaria: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Agregar(datos): PrivateScope, Public, HideBySig
+    Eliminar(): PrivateScope, Public, HideBySig
+    ObtenerCantidad(): PrivateScope, Public, HideBySig
+Class ClassVeterinaria.datos_atencion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.DateTime, Double, Boolean, ClassVeterinaria.datos): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getdueno(): PrivateScope, Public, HideBySig
+    getfechaAtencion(): PrivateScope, Public, HideBySig
+    getcosto(): PrivateScope, Public, HideBySig
+    getpagado(): PrivateScope, Public, HideBySig
+    setdueno(datos): PrivateScope, Public, HideBySig
+    setfechaAtencion(DateTime): PrivateScope, Public, HideBySig
+    setcosto(Int32): PrivateScope, Public, HideBySig
+    setpagado(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+Class ClassVeterinaria.lista_Atencion_veterinaria: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Agregar(datos_atencion): PrivateScope, Public, HideBySig
+    Primero(): PrivateScope, Public, HideBySig
+    Ultimo(): PrivateScope, Public, HideBySig
+    Anterior(String): PrivateScope, Public, HideBySig
+    Siguiente(String): PrivateScope, Public, HideBySig
+    ObtenerCantidad(): PrivateScope, Public, HideBySig
+    ObtenerLista(): PrivateScope, Public, HideBySig
+    Eliminar(String): PrivateScope, Public, HideBySig
