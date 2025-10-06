@@ -16,8 +16,6 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Assembly ClassVeterinaria, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
-	hash=None, flags=None
 Class LaboratorioVETERINARIA.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -25,6 +23,7 @@ Class LaboratorioVETERINARIA.MyForm: AutoLayout, AnsiClass, Class, Public, Befor
     ClassVeterinaria.cola_veterinaria cola_clientes : Public
     ClassVeterinaria.pila_veterinaria pila_clientes : Public
     ClassVeterinaria.lista_Atencion_veterinaria lista_atencion : Public
-    System.Windows.Forms.TextBox textBox4 : Public
+    System.Windows.Forms.TextBox txtACantidad : Public
   Methods:
     clear_atencion(): PrivateScope, Public, HideBySig
+    clear_ventana(): PrivateScope, Public, HideBySig

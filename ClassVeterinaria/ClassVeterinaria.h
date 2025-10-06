@@ -51,6 +51,12 @@ namespace ClassVeterinaria {
 			cola->RemoveLast();
 			return dato;
 		}
+		datos^ Primero() {
+			if (cola->Count > 0)
+				return cola->First->Value;
+			else
+				return nullptr;
+		}
 		LinkedList<datos^>^ ObtenerLista() {
 			return cola;
 		}
@@ -74,6 +80,15 @@ namespace ClassVeterinaria {
 			datos^ dato = pila->Peek();
 			pila->Pop();
 			return dato;
+		}
+		array<datos^>^ ObtenerElementos()
+		{
+			// Si la pila está vacía, devolver un arreglo vacío
+			if (pila->Count == 0) {
+				return gcnew array<datos^>(0);
+			}
+			// Devuelve una copia de los elementos actuales (sin eliminarlos)
+			return pila->ToArray();
 		}
 		int ObtenerCantidad() {
 			return pila->Count;
@@ -154,6 +169,15 @@ namespace ClassVeterinaria {
 		}
 		List<datos_atencion^>^ ObtenerLista() {
 			return Lista;
+		}
+		array<datos_atencion^>^ ObtenerElementos()
+		{
+			// Si la pila está vacía, devolver un arreglo vacío
+			if (Lista->Count == 0) {
+				return gcnew array<datos_atencion^>(0);
+			}
+			// Devuelve una copia de los elementos actuales (sin eliminarlos)
+			return Lista->ToArray();
 		}
 		bool Eliminar(String^ nombreBuscado) {
 			for (int i = 0; i < Lista->Count; i++) {

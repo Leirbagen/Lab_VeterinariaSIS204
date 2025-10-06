@@ -27,6 +27,7 @@ Class ClassVeterinaria.cola_veterinaria: AutoLayout, AnsiClass, Class, Public, B
     AgregarFinal(datos): PrivateScope, Public, HideBySig
     EliminarInicio(): PrivateScope, Public, HideBySig
     EliminarFinal(): PrivateScope, Public, HideBySig
+    Primero(): PrivateScope, Public, HideBySig
     ObtenerLista(): PrivateScope, Public, HideBySig
     ObtenerCantidad(): PrivateScope, Public, HideBySig
 Class ClassVeterinaria.pila_veterinaria: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
@@ -34,6 +35,7 @@ Class ClassVeterinaria.pila_veterinaria: AutoLayout, AnsiClass, Class, Public, B
   Methods:
     Agregar(datos): PrivateScope, Public, HideBySig
     Eliminar(): PrivateScope, Public, HideBySig
+    ObtenerElementos(): PrivateScope, Public, HideBySig
     ObtenerCantidad(): PrivateScope, Public, HideBySig
 Class ClassVeterinaria.datos_atencion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(System.DateTime, Double, Boolean, ClassVeterinaria.datos): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -56,4 +58,5 @@ Class ClassVeterinaria.lista_Atencion_veterinaria: AutoLayout, AnsiClass, Class,
     Siguiente(String): PrivateScope, Public, HideBySig
     ObtenerCantidad(): PrivateScope, Public, HideBySig
     ObtenerLista(): PrivateScope, Public, HideBySig
+    ObtenerElementos(): PrivateScope, Public, HideBySig
     Eliminar(String): PrivateScope, Public, HideBySig

@@ -1,3 +1,7 @@
-﻿  ClassVeterinaria.cpp
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  ClassVeterinaria.cpp
+  Generando código...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   ClassVeterinaria.vcxproj -> C:\Users\Gabriel\OneDrive\Escritorio\USFX\Ingenieria en Ciencias de la Computación\02-2025\Estructura de Datos\Laboratorios\Lab1\Laboratorio_VETERINARIA\x64\Debug\ClassVeterinaria.dll
